@@ -5,93 +5,8 @@
     android:orientation="vertical"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
-
-    <RadioGroup
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/radioGroup"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-        <RadioButton
-            android:id="@+id/leo"
-            android:onClick="pickTurtle"
-            android:text="Sombrero"
-            android:checked="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <RadioButton
-            android:id="@+id/mike"
-            android:onClick="brazos"
-            android:text="Brazos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <RadioButton
-            android:id="@+id/don"
-            android:onClick="orejas"
-            android:text="Orejas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <RadioButton
-            android:id="@+id/nariz"
-            android:onClick="nariz"
-            android:text="Nariz"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-        <RadioButton
-            android:id="@+id/cejas"
-            android:onClick="cejas"
-            android:text="Cejas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <RadioButton
-            android:id="@+id/ojos"
-            android:onClick="ojos"
-            android:text="Ojos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-        <RadioButton
-            android:id="@+id/gafas"
-            android:onClick="gafas"
-            android:text="Gafas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-        <RadioButton
-            android:id="@+id/bigote"
-            android:onClick="mostacho"
-            android:text="Bigote"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-        <RadioButton
-            android:id="@+id/risa"
-            android:onClick="sonrrisa"
-            android:text="Sonrrisa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-        <RadioButton
-            android:id="@+id/tillas"
-            android:onClick="tillas"
-            android:text="Tillas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </RadioGroup>
-
-    <ImageView
-        android:id="@+id/cuerpo"
-        android:src="@drawable/body"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#6d77b8">
 
     <ImageView
     android:id="@+id/brazos"
@@ -163,5 +78,79 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Usuario:"
+        android:id="@+id/textView"
+        android:textSize="23dp"
+        android:textColor="#040303"
+        android:layout_above="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Contraseña:"
+        android:id="@+id/textView2"
+        android:textSize="23dp"
+        android:textColor="#060606"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Te ofrecemos una forma más fácil para la búsqueda de tu casa "
+        android:id="@+id/textView3"
+        android:textSize="22dp"
+        android:textColor="#492372"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="PROPERTY MOBILE"
+        android:id="@+id/textView4"
+        android:textColor="#6b0c82"
+        android:textSize="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:id="@+id/button"
+        android:layout_above="@+id/brazos"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="click" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
 
 </RelativeLayout>
